@@ -1,38 +1,171 @@
-.App {
+:root{
+  --bg1: #9bc54d;
+  --bg2: #3f974a;
+  --cg1: rgb(124, 91, 138);
+  --cg2: rgb(204, 204, 204);
+  --text: #26ade4;
+}
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  /* padding-left: 20px; */
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--bg1),var(--bg2));
+}
+.table-login1{
+  width: 600px;
+  height: 600px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+.table-login1 h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table-body{
+  padding: 40px 85px;
+  padding-bottom: 73px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.form-row .name {
+  width: 50px;
+  color: #555;
+  font-size: 10px;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-row .value {
+  width: calc(100% - 125px);
+  justify-content: space-around;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row .col-2:last-child .input-group-desc {
+  margin-bottom: 0;
+}
+.row-space {
+  display: flex;
+  justify-content: space-around;
+}
+.col-2 {
+  width: calc((100% - 30px) / 2);
+}
+
+/* ==========================================================================
+   #INPUT
+   ========================================================================== */
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+.input--style-5 {
+  background: #e5e5e5;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+  width: 100px;
+}
+.input-group-desc {
+  position: relative;
+}
+.input-group {
+  position: relative;
+  margin: 0;
+}
+
+/* ==========================================================================
+   #LABEL
+   ========================================================================== */
+.label {
+  color: #555;
+  font-size: 15px;
+  font-weight: 700;
+}
+.label--desc {
+  position: absolute;
+  text-transform: capitalize;
+  display: block;
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 7px;
+  left: 0;
+}
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 50px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-family: inherit;
+}
+.btn--red {
+  background: #ff4b5a;
+}
+
+.btn--red:hover {
+  background: #eb3746;
+}
+
+
+
+.table-login2{
+  width: 450px;
+  height: 500px;
+  background: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  padding: 1rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 10px;
+}
+th {
+  background-color: rgb(117, 201, 250);
 }
 
-.App-link {
-  color: #61dafb;
+td {
+  background-color: rgb(205, 235, 253);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table-login2 td:last-child {
+  display: flex;
+  justify-content: space-evenly;
 }

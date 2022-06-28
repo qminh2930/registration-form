@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "first_name": "Quang",
+      "last_name": "Minh",
+      "university": "Dai hoc Cong nghe GTVT",
+      "email": "qminh@gmail.com",
+      "phone": "0123456789"
+    },
+    {
+        "id": 2,
+        "first_name": "Quang",
+        "last_name": "Huy",
+        "university": "Dai hoc Cong nghe GTVT",
+        "email": "quanghuy@gmail.com",
+        "phone": "0312457896"
+    },
+    {
+        "id": 3,
+        "first_name": "Thu",
+        "last_name": "Huyen",
+        "university": "Dai hoc Ngoai Thuong",
+        "email": "thuhuyen@gmail.com",
+        "phone": "01247854132"
+    }
+]
